@@ -1,0 +1,45 @@
+<?php defined('_VALID') or die('Restricted Access!'); ?>
+<div class="btn-toolbar btn-toolbar-menu">
+  <?php if (VCfg::get('model.browse_timeline')): $timelines = array('popular', 'viewed'); ?>
+  <?php if (in_array($this->order, $timelines)): $timeline_display = true; endif; endif; if (VCfg::get('model.browse_order')): ?>
+  <div class="btn-group" role="group">
+	<button type="button" class="btn btn-menu btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+	  <?php $icons = array(
+		'relevance'		=> 'search',
+		'popular'		=> 'line-chart',
+		'viewed'		=> 'bar-chart-o',
+		'videos'		=> 'video-camera'
+	  ); ?>
+      <i class="fa fa-<?php echo $icons[$this->order]; ?>"></i> <?php echo $this->orders[$this->order];  ?>                             
+      <span class="caret"></span>
+      <span class="sr-only">Toggle Dropdown</span>	  
+	</button>
+	<ul class="dropdown-menu<?php if (!isset($timeline_display)): echo ' dropdown-menu-right'; endif; ?>">
+	  <?php foreach ($this->orders as $order => $name): ?>
+	  <li<?php if ($order == $this->order): echo ' class="active"'; endif; ?>><a href="<?php echo build_search_url($this->query, $order, true); ?>"><i class="fa fa-<?php echo $icons[$order]; ?>"></i> <?php echo e($name); ?></a></li>
+	  <?php endforeach; ?>
+	</ul>
+  </div>
+  <?php endif; if (isset($timeline_display)): ?>
+  <div class="btn-group pull-right" role="group">
+	<button type="button" class="btn btn-menu btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+  	  <?php if ($this->timeline == '' or $this->timeline == 'all'): echo __('all-time'); else: echo __($this->timelines[$this->timeline]); endif; ?>
+      <span class="caret"></span>
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+	<ul class="dropdown-menu dropdown-menu-right" role="menu">
+	  <?php $timelines = $this->timelines; if ($this->order == 'popular'): unset($timelines['today']); endif; foreach ($timelines as $timeline => $name): ?>
+	  <li<?php if ($timeline == $this->timeline): echo ' class="active"'; endif; ?>><a href="<?php echo build_search_url($this->query, $this->order, true); ?>"></i> <?php echo __($name); ?></a></li>
+	  <?php endforeach; ?>
+	  <li<?php if ($this->timeline == '' or $this->timeline == 'all'): echo ' class="active"'; endif; ?>><a href=""><?php echo __('all-time'); ?></a></li>
+	</ul>
+  </div>
+  <?php endif; if (VCfg::get('model.browse_filters')): ?>
+  <div class="btn-group pull-right" role="group">
+	<button id="model-filters" type="button" class="btn btn-menu btn-xs"><?php echo __('more-filters'); ?> <i class="fa fa-plus"></i> </button>
+  </div>
+  <div class="btn-group pull-right">
+	<a href="<?php echo build_search_url($this->query, $this->order, true); ?>"><i class="fa fa-toggle-off"></i></a>
+  </div>
+  <?php endif; ?>
+</div>

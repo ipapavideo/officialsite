@@ -1,0 +1,23 @@
+.vjs-big-play-button {
+	font-size: 7em;
+}
+
+.video-js .vjs-current-time {
+	display: block;
+}
+
+.video-js .vjs-duration {
+	display: block;
+}
+
+.video-js .vjs-progress-control:hover .vjs-play-progress:after {
+    display:none;
+}
+
+.video-js .vjs-progress-control:hover .vjs-mouse-display:after {
+    display:none;
+}
+
+.video-js .vjs-control-bar {
+	background: #000000;
+}

@@ -1,0 +1,420 @@
+@media screen and (max-width:959px) {
+
+  .model-image {width: 120px; height: auto;}
+  #top-menu {width: 35%;}
+  #mobile-menu {display: block; width: 33%; }  
+  
+  .hidden-mobile {display: none !important;}
+  .hidden-desktop {display: inherit !important;}
+  
+  .mobile-header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	width: 100%;
+	height: 42px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;	
+	border-bottom: 1px solid #343a40;
+	background: #000000;
+	color: #ffffff;
+  }
+  
+  .main-content {
+	  padding-top: 42px;
+  }
+  
+  .logo {width: 31%; text-align: center;}
+  .logo img {max-width: 100px; height: auto;}
+  
+  .btn-mobile {
+	  padding: 0 0 !important;
+	  background: transparent !important;
+	  border-radius: 0 !important;
+	  border: 0 !important;
+	  color: #ffffff !important;
+  }
+  
+  .search {
+	  display: none;
+	  position: absolute;
+	  width: 100% !important;
+	  top: 42px;
+	  left: 0;
+	  z-index: 1001;
+	  margin: 0 !important;
+	  padding: 10px 10px 10px 10px !important;
+  }
+  
+  .search form {
+	margin: 0;
+  }
+  
+  #menu {
+	position: fixed;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	z-index: 10001;
+	overflow-y: auto;
+	top: 42px;
+  }
+  
+  .show-menu {
+	opacity: 1;
+	left: 0 !important;
+	transition: all 0.3s ease-out;
+  }
+  
+  .hide-menu {
+	opacity: 0;
+	left: -100% !important;
+	transition: all 0.3s ease-out;
+  }
+  
+  nav.menu ul {
+	width: 100%;
+	padding: 15px 0 15px 0;
+	margin: 0;
+  }
+  
+  nav.menu ul li {
+	display: block;
+	width: 100%;
+  }
+  
+  nav.menu ul li.upload {
+	  margin-top: 10px !important;
+  }
+
+  nav.menu ul li.mobile {
+	display: inline-block;
+	width: auto;
+  }
+  
+  nav.menu ul li a {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	display: block;
+	padding: 5px 0 5px 5px;
+  }
+  
+  nav.menu ul li.mobile a {
+	font-size: 14px;
+	line-height: 20px;
+  }
+  
+  nav.menu ul ul {
+	display: none;
+	position: relative;
+  }
+  
+  nav.menu ul ul li {
+	display: block;
+	width: 100%;
+  }
+
+  nav.menu ul ul li a {
+	display:block;
+	padding:3px 10px;
+	font-size:1.1em;
+	line-height: 1.1em;
+	text-decoration:none;
+  }
+  
+  .mega-menu {display: none;}  
+    
+  .search-icon {display: none;}
+  #mobile-menu .btn {font-size: 20px;}
+
+  h1, .h1 {font-size: 1.5rem;}
+}
+
+@media screen and (min-width:319px) {
+  .videos > .cell {width: calc(100% - .5rem);}
+  .albums > .cell {width: calc(50% - .5rem);}
+  .photos > .cell {width: calc(50% - .5rem);}
+  .categories > .cell {width: calc(50% - .5rem);}
+  .models > .cell {width: calc(50% - .5rem);}
+  .channels > .cell {width: calc(50% - .5rem);}
+  .users > .cell {width: calc(50% - .5rem);}
+  .playlists > .cell {width: calc(100% - .5rem);}
+  
+  .embed-video {width: 100%; padding-top: 56.25%; position:relative;}
+  .embed-video iframe {position: absolute; top: 0; left: 0; bottom: 0; right: 0;}
+  .embed-video-title {width: 100%; text-align: center;}
+}
+
+@media screen and (min-width:400px) {
+  .videos > .cell {width: calc(100% - .5rem);}
+  .categories > .cell {width: calc(50% - .5rem);}
+  .albums > .cell {width: calc(50% - .5rem);}
+  .photos > .cell {width: calc(50% - .5rem);}
+  .models > .cell {width: calc(50% - .5rem);}
+  .channels > .cell {width: calc(50% - .5rem);}
+  .users > .cell {width: calc(50% - .5rem);}
+  .playlists > .cell {width: calc(100% - .5rem);}
+  
+}
+
+@media screen and (min-width:480px) {
+  .videos > .cell {width: calc(50% - .5rem);}
+  .albums > .cell {width: calc(33.33% - .5rem);}
+  .photos > .cell {width: calc(33.33% - .5rem);}
+  .categories > .cell {width: calc(33.33% - .5rem);}
+  .models > .cell {width: calc(33.33% - .5rem);}
+  .channels > .cell {width: calc(33.33% - .5rem);}
+  .users > .cell {width: calc(33.33% - .5rem);}
+  .playlists > .cell {width: calc(50% - .5rem);}
+
+  .embed-video {width: 420px; height: 220px; padding-top: 0;}
+  .embed-video-title {width: 420px;}
+
+}
+
+@media screen and (max-width: 641px) {
+  .btn-lg, .btn-group-lg > .btn {
+	padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;        
+  } 
+}
+
+@media screen and (max-width: 400px) {
+  #top-menu {width: 40%;}
+  #mobile-menu {width: 28%;}
+  .logo {width: 30%;}
+}
+
+@media screen and (min-width:640px) {
+  .videos > .cell {width: calc(50% - .5rem);}
+  .albums > .cell {width: calc(33.33% - .5rem);}
+  .photos > .cell {width: calc(33.33% - .5rem);}
+  .categories > .cell {width: calc(33.33% - .5rem);}
+  .models > .cell {width: calc(33.33% - .5rem);}
+  .channels > .cell {width: calc(33.33% - .5rem);}
+  .users > .cell {width: calc(33.33% - .5rem);}
+  .playlists > .cell {width: calc(50% - .5rem);}
+}
+
+@media screen and (min-width:768px){
+  .videos > .cell {width: calc(33.33% - .5rem);}
+  .albums > .cell {width: calc(25% - .5rem);}
+  .photos > .cell {width: calc(25% - .5rem);}
+  .categories > .cell {width: calc(33.33% - .5rem);}
+  .models > .cell {width: calc(25% - .5rem);}
+  .channels > .cell {width: calc(25% - .5rem);}
+  .users > .cell {width: calc(25% - .5rem);}
+  .playlists > .cell {width: calc(33.33% - .5rem);}
+  
+  .embed-video {width: 640px; height: 360px;}
+  .embed-video-title {width: 640px;}
+
+  .grid-info {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width:960px){
+  .videos > .cell {width: calc(33.33% - .5rem);}
+  .videos-menu > .cell {width: calc(33.33% - .5rem);}
+  .albums > .cell {width: calc(20% - .5rem);}
+  .albums-menu > .cell {width: calc(16.66% - .5rem);}
+  .photos > .cell {width: calc(20% - .5rem);}
+  .categories > .cell {width: calc(25% - .5rem);}
+  .categories-menu > .cell {width: calc(16.66% - .5rem);}
+  .models > .cell {width: calc(20% - .5rem);}
+  .models-menu > .cell {width: calc(20% - .5rem);}
+  .channels > .cell {width: calc(20% - .5rem);}
+  .channels-menu > .cell {width: calc(20% - .5rem);}
+  .users > .cell {width: calc(20% - .5rem);}
+  .users-menu > .cell {width: calc(16.66% - .5rem);}
+  .playlists > .cell {width: calc(33.33% - .5rem);}
+
+  .hidden-mobile {display: inline-block;}
+  .hidden-desktop {display: none !important; }
+  
+  nav.menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+  }
+
+  nav.menu ul li {
+	display:inline-block;
+  }
+
+  nav.menu ul li.mobile {
+	display: none;
+  }
+
+  nav.menu > ul > li > a.menu-item {
+	display:block;
+	padding:0 10px;
+	font-size:18px;
+	line-height: 50px;
+	text-decoration:none;
+  }
+
+  nav.menu > ul > li.item-right {
+	float: right;
+	margin-left: 10px;
+  }
+  
+  nav.menu > ul > li.upload {
+	margin-top: 5px;
+  }
+  
+  nav.menu > ul > li.upload > a {
+	font-size: 16px;
+	line-height: 30px;
+  }
+  
+  nav.menu > ul > li > .mega-menu {
+	display: none;
+	position: absolute;
+	top: 50px;
+	z-index:1001;
+	width: 100%;
+	left: 0;
+  }
+  
+  .menu-left a {
+	  width: 100%;
+	  display: block;
+	  font-size: 1em !important;
+	  line-height: 1.2em !important;
+	  padding: 5px 0 5px 5px;
+	  text-decoration: none;
+  }
+  
+  nav.menu ul li ul.menu-list {
+	display: none;
+	position: absolute;
+	top: 50px;
+	z-index: 1003;
+  }
+  
+  nav.menu ul li:hover > ul.menu-list {
+	display:inherit;
+  }
+
+  nav.menu ul li:hover > .mega-menu {
+	display: inherit;
+  }
+
+  nav.menu ul.menu-list > li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+  }
+
+  nav.menu ul.menu-list > li > a {
+	display:block;
+	padding:0 15px 0 15px !important;
+	font-size:14px;
+	line-height: 30px;
+	text-decoration:none;
+  }
+
+  .menu-content h5 > a {
+	padding: 0 !important;
+	margin: 0 !important;
+	font-size: 13px !important;
+    line-height: 13px !important;
+  }
+
+  .menu-content h5 > a:hover {
+	background: transparent !important;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .videos > .cell {width: calc(33.33% - .5rem);}
+  .videos-menu > .cell {width: calc(33.33% - .5rem);}
+  .albums > .cell {width: calc(20% - .5rem);}
+  .albums-menu > .cell {width: calc(16.66% - .5rem);}
+  .photos > .cell {width: calc(20% - .5rem);}
+  .categories > .cell {width: calc(20% - .5rem);}
+  .categories-menu > .cell {width: calc(16.66% - .5rem);}
+  .models > .cell {width: calc(20% - .5rem);}
+  .channels > .cell {width: calc(20% - .5rem);}
+  .users > .cell {width: calc(20% - .5rem);}
+  .users-menu > .cell {width: calc(10% - .5rem);}
+  .playlists > .cell {width: calc(33.33% - .5rem);}
+
+  .grid-info {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media screen and (min-width:1280px){
+  .videos > .cell {width: calc(25% - .5rem);}
+  .videos-menu > .cell {width: calc(20% - .5rem);}
+  .albums > .cell {width: calc(20% - .5rem);}
+  .albums-menu > .cell {width: calc(16.66% - .5rem);}
+  .photos > .cell {width: calc(20% - .5rem);}
+  .categories > .cell {width: calc(20% - .5rem);}
+  .categories-menu > .cell {width: calc(16.66% - .5rem);}
+  .models > .cell {width: calc(20% - .5rem);}
+  .channels > .cell {width: calc(20% - .5rem);}
+  .users > .cell {width: calc(20% - .5rem);}
+  .playlists > .cell {width: calc(25% - .5rem);}
+  
+  nav.menu ul li a {
+	font-size:20px;
+	line-height: 50px;
+  }
+  
+  nav.menu ul ul {
+	top: 50px;
+  }  
+}
+
+@media screen and (min-width:1366px){
+  .videos > .cell {width: calc(25% - .5rem);}
+  .videos-menu > .cell {width: calc(20% - .5rem);}
+  .albums > .cell {width: calc(16.66% - .5rem);}
+  .albums-menu > .cell {width: calc(16.66% - .5rem);}
+  .photos > .cell {width: calc(16.66% - .5rem);}
+  .categories > .cell {width: calc(16.66% - .5rem);}
+  .categories-menu > .cell {width: calc(16.66% - .5rem);}
+  .models > .cell {width: calc(16.66% - .5rem);}
+  .models-menu > .cell {width: calc(20% - .5rem);}
+  .channels > .cell {width: calc(16.66% - .5rem);}
+  .channels-menu > .cell {width: calc(20% - .5rem);}
+  .users > .cell {width: calc(16.66% - .5rem);}
+  .playlists > .cell {width: calc(25% - .5rem);}
+}
+
+@media screen and (min-width:1600px){
+  .videos > .cell {width: calc(20% - .5rem);}
+  .videos-menu > .cell {width: calc(20% - .5rem);}
+  .albums > .cell {width: calc(16.66% - .5rem);}
+  .albums-menu > .cell {width: calc(16.66% - .5rem);}
+  .photos > .cell {width: calc(16.66% - .5rem);}
+  .categories > .cell {width: calc(14.28% - .5rem);}
+  .categories-menu > .cell {width: calc(14.28% - .5rem);}
+  .users > .cell {width: calc(10% - .5rem);}
+  .users-menu > .cell {width: calc(10% - .5rem);}
+  .models > .cell {width: calc(14.28% - .5rem);}
+  .models-menu > .cell {width: calc(14.28% - .5rem);}
+  .channels > .cell {width: calc(16.66% - .5rem);}
+  .channels-menu > .cell {width: calc(20% - .5rem);}
+  .playlists > .cell {width: calc(20% - .5rem);}
+}
+
+@media screen and (min-width:1920px){
+  .container, .container-fluid {width: 1700px; margin-left: auto; margin-right: auto;}
+}
