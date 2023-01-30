@@ -20,7 +20,7 @@ $ids            = array(); ?>
         $thumb      = (isset($video['thumb_url']) and $video['thumb_url']) ? $video['thumb_url'] : THUMB_URL.'/'.path($video_id).'/'.$video['thumb'].'.jpg'.$cache;
         $thumb      = (isset($video['type']) and $video['type'] == '1') ? THUMB_URL.'/private.jpg' : $thumb;
         $data_src   = ($lazy and !$private) ? ' data-src="'.$thumb.'"' : '';
-        $thumb      = ($lazy and !$private) ? THUMB_URL.'/loading.jpg' : $thumb;
+        $thumb      = ($lazy and !$private) ? THUMB_URL.'/loading.gif' : $thumb;
         $lazyc      = ($lazy and !$private) ? ' lazy' : '';
         $data       = ' data-id="'.$video_id.'" data-thumb="'.$video['thumb'].'" data-thumbs="'.$video['thumbs'].'"';
         $title      = e($video['title']);

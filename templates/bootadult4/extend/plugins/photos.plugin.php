@@ -20,7 +20,7 @@ function template_plugin_photos($photos, $album = array(), $id = null, $colmenu 
 		$user_id  	= (isset($photo['user_id']) and $photo['user_id']) ? $photo['user_id'] : $album_user_id;
 		$thumb		= PHOTO_THUMB_URL.'/'.$photo_id.'.jpg';
         $data_src   = ($lazy) ? ' data-src="'.$thumb.'"' : '';
-        $thumb      = ($lazy) ? PHOTO_THUMB_URL.'/loading.jpg' : $thumb;
+        $thumb      = ($lazy) ? PHOTO_THUMB_URL.'/loading.gif' : $thumb;
         $lazyc      = ($lazy) ? ' lazy' : '';
 		
 		$output[]	= '<div id="photo-'.$photo_id.'" class="cell photo">';

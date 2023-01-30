@@ -18,7 +18,7 @@ function template_plugin_albums($albums, $id = null, $colmenu = false, $submenu 
 		$url		= album_url($album_id, $album['slug'], $album['premium'], false);
 		$thumb		= PHOTO_THUMB_URL.'/'.$album['cover_id'].'.jpg';
 		$data_src	= ($lazy) ? ' data-src="'.$thumb.'"' : '';
-		$thumb		= ($lazy) ? PHOTO_THUMB_URL.'/loading.jpg' : $thumb;
+		$thumb		= ($lazy) ? PHOTO_THUMB_URL.'/loading.gif' : $thumb;
 		$lazyc		= ($lazy) ? ' lazy' : '';
 		
 		$output[]	= '<div id="album-'.$album_id.'" class="cell album">';

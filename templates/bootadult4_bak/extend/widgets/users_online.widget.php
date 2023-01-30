@@ -1,0 +1,27 @@
+<?php
+function template_widget_users_online()
+{
+	$umodel		= VModel::load('community', 'user');
+	$users		= $umodel->users(array('orientation' => orientation(), 'has_avatar' => 'all', 'online' => 1, 'order' => 'recent'), VCfg::get('template.bootadult4.users_online_nr'));
+
+    $output     = array();
+    $output[]   = '<div class="row">';
+    $output[]   = '<div class="col-lg-12">';
+    $output[]   = '<div class="row">';
+    $output[]   = '<div class="col-md-8 text-center text-md-left">';
+    $output[]   = '<h2>'.__('online-users').'</h2>';
+    $output[]   = '</div>';
+    $output[]   = '<div class="col-md-4 d-flex justify-content-center justify-content-lg-end align-items-center">';
+    $output[]   = '<a href="'.REL_URL.LANG.'/user/search/?online=yes" class="btn btn-light btn-sm"><i class="fa fa-plus"></i> '.__('view-more').'</a>';
+    $output[]   = '</div></div>';
+
+    if ($users) {
+        $output[]   = p('users', $users);
+    } else {
+        $output[]   = '<div class="none">'.__('no-users').'</div>';
+    }
+
+    $output[]   = '</div></div>';
+
+  	return implode('', $output);
+}

@@ -14,7 +14,7 @@ function template_plugin_users($users, $id = null, $colmenu = null, $submenu = n
 		$url		= REL_URL.LANG.'/users/'.$username.'/';
 		$thumb		= USER_URL.'/'.avatar(false, $user_id, $user['avatar'], $user['gender'], false);
         $data_src   = ($lazy) ? ' data-src="'.$thumb.'"' : '';
-        $thumb      = ($lazy) ? USER_URL.'/loading.jpg' : $thumb;
+        $thumb      = ($lazy) ? USER_URL.'/loading.gif' : $thumb;
         $lazyc      = ($lazy) ? ' lazy' : '';		
 		
 		$output[]	= '<div id="user-'.$user_id.'" class="cell user">';

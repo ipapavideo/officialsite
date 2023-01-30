@@ -11,7 +11,7 @@ function template_plugin_users_list($users, $id = null)
         $url        = REL_URL.LANG.'/users/'.$username.'/';
         $thumb      = USER_URL.'/'.avatar(false, $user_id, $user['avatar'], $user['gender'], false);
         $data_src   = ($lazy) ? ' data-src="'.$thumb.'"' : '';
-        $thumb      = ($lazy) ? USER_URL.'/loading.jpg' : $thumb;
+        $thumb      = ($lazy) ? USER_URL.'/loading.gif' : $thumb;
         $lazyc      = ($lazy) ? ' lazy' : '';
 
         $output[]   = '<div class="media mb-2 flex-even">';

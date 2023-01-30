@@ -10,7 +10,7 @@ function template_plugin_channels($channels, $id = null, $class = 'channels')
 		$name		= e($channel['name']);
 		$thumb		= CHANNEL_URL.'/'.$channel_id.'.'.$channel['thumb'];		
         $data_src   = ($lazy) ? ' data-src="'.$thumb.'"' : '';
-        $thumb      = ($lazy) ? CHANNEL_URL.'/loading.jpg' : $thumb;
+        $thumb      = ($lazy) ? CHANNEL_URL.'/loading.gif' : $thumb;
         $lazyc      = ($lazy) ? ' lazy' : '';
 		$arrow 		= 'up';		
 		$color 		= ' text-success';

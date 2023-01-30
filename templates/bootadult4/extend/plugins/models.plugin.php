@@ -17,7 +17,7 @@ function template_plugin_models($models, $id = null, $class = 'models')
 		$name		= e($model['name']);
 		$thumb		= MODEL_URL.'/'.$model_id.'.'.$model['ext'];
         $data_src   = ($lazy) ? ' data-src="'.$thumb.'"' : '';
-        $thumb      = ($lazy) ? MODEL_URL.'/loading.jpg' : $thumb;
+        $thumb      = ($lazy) ? MODEL_URL.'/loading.gif' : $thumb;
         $lazyc      = ($lazy) ? ' lazy' : '';		
 		$arrow 		= 'up';		
 		$color 		= ' text-success';		

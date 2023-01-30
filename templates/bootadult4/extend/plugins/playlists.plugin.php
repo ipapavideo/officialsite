@@ -16,7 +16,7 @@ function template_plugin_playlists($playlists, $id = null, $colmenu = false, $su
 		$name			= e($playlist['name']);
 		$thumb 			= ($playlist['thumb_url']) ? $playlist['thumb_url'] : THUMB_URL.'/'.path($playlist['thumb_id']).'/'.$playlist['thumb'].'.jpg'.$cache;
         $data_src   	= ($lazy) ? ' data-src="'.$thumb.'"' : '';
-        $thumb      	= ($lazy) ? THUMB_URL.'/loading.jpg' : $thumb;
+        $thumb      	= ($lazy) ? THUMB_URL.'/loading.gif' : $thumb;
         $lazyc      	= ($lazy) ? ' lazy' : '';		
 		
 		$output[]	= '<div id="playlist-'.$playlist_id.'" class="cell playlist">';

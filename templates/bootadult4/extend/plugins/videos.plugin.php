@@ -25,7 +25,7 @@ function template_plugin_videos($videos, $id = null, $colmenu = false, $submenu 
 		$thumb		= ($private) ? THUMB_URL.'/private.jpg' : $thumb;
 		$data     	= ($private) ? '' : ' data-id="'.$video_id.'" data-thumb="'.$video['thumb'].'" data-thumbs="'.$video['thumbs'].'"';
 		$data_src	= ($lazy and !$private) ? ' data-src="'.$thumb.'"' : '';
-		$thumb		= ($lazy and !$private) ? THUMB_URL.'/loading.jpg' : $thumb;
+		$thumb		= ($lazy and !$private) ? THUMB_URL.'/loading.gif' : $thumb;
 		$lazyc		= ($lazy and !$private) ? ' lazy' : '';
 		$title		= e($video['title']);
 		$url		= video_view_url($video_id, $video['slug'], null, $video['premium'], false);

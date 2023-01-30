@@ -23,7 +23,7 @@ function template_plugin_categories($categories, $type = 'video', $absolute = fa
 		$name		= e($category['name']);
 		$thumb		= $img_url.$cat_id.'.'.$category['ext'];
         $data_src   = ($lazy) ? ' data-src="'.$thumb.'"' : '';
-        $thumb      = ($lazy) ? CHANNEL_URL.'/loading.jpg' : $thumb;
+        $thumb      = ($lazy) ? CHANNEL_URL.'/loading.gif' : $thumb;
         $lazyc      = ($lazy) ? ' lazy' : '';
 		
 		$output[]	= '<div id="category-'.$cat_id.'" class="cell category">';
